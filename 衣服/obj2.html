@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			#header{
+				width: 100%;
+				height: 188px;
+				background: rgb(14, 21, 13);
+			}
+			#header div{
+				width: 1200px;
+				height: 188px;
+				margin: 0 auto;
+			}
+			#header ul{
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 75px;
+				float: right;
+			}
+			#header ul li{
+				display: inline-block;
+				color: lightgray;
+				font-size: 25px;
+				margin-right: 40px;
+				cursor: pointer;
+				
+			}
+			article{
+				width: 1260px;
+				margin: 0 auto;
+			}
+			#left{
+				margin-top: 8px;
+				width: 190px;
+				display: inline-block;
+				background: rgba(212, 210, 213, 0.1);
+				border: #B5B5B5 solid 1.5px;
+				margin-bottom: 5px;
+			}
+			#left img{
+				float: left;
+			}
+			#right{
+				width: 1000px;
+				display: inline-block;
+				vertical-align:top;
+				margin-left: 20px;
+			}
+			#rightTop{
+				margin-top: 5px;
+				width: 1000px;
+				height: 20px;
+			}
+			#rightTop p:hover,.main i:hover,.main span:hover{
+				text-decoration: underline;
+				cursor: pointer;
+			}
+			#rightTop input{
+				border-radius: 8px;
+			}
+			.main ul{
+				display: flex;
+				list-style-type: none;
+				justify-content: space-between;
+			}
+			.main ul li{
+				width: 230px;
+				font-size: 13px;
+			}
+			.main ul li img{
+				width: 230px;
+			}
+			.main div{
+				user-select: none;
+				margin-top: 15px;
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 15px;
+			}
+			.main span{
+				color: #FF7F50;
+				margin-right: 50px;
+			}
+			.main i{
+				color: #5EA6EB;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div>
+				<img src="image/header.png" height="188px">
+				<ul>
+					<a href="衣服.html"><li>HOME</li></a>
+					<a href="obj2.html"><li>新品上新</li></a>
+					<a href="obj3.html"><li>T恤</li></a>
+					<a href="obj4.html"><li>卫衣</li></a>
+					<a href="obj5.html"><li>裤装</li></a>
+					<!-- <li>夹克</li>
+					<li>外套</li>
+					<li>配饰</li> -->
+				</ul>
+			</div>
+		</div>
+		<article>
+			<div id="left" style="cursor: pointer;">
+				<img src="image/aside1.png" >
+				<img src="image/aside2.png" >
+				<img src="image/aside3.png" >
+				<img src="image/aside4.png" >
+				<img src="image/aside5.png" >
+				<img src="image/aside6.png" >
+				<b style="font-size: 16px; color: #a6a4ad; padding: 10px 5px;line-height: 3;">- 查看所有宝贝 -</b><br>
+				<i style="font-size: 14px; color: dimgrey;"> 按综合 按销量 按新品 按价格</i>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 2020冬季上新 -</b><br>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.26上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.25上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.23上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.20上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.16上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.10上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">8.05上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">7.31上新</p>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 2020春季上新 -</b><br>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">5.26上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">5.25上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">4.23上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">3.20上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">2.16上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">1.10上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">12.05上新</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">12.31上新</p>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 男士专区 -</b><br>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 男士下装 -</b><br>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">卫裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">休闲裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">牛仔裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">短裤</p>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 男士上装 -</b><br>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">棉服/p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">羽绒服</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">短袖</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">长袖</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">衬衫</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">毛衣</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">背心</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">外套</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">夹克</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">棒球服</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">连帽卫衣</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">套头卫衣</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">马夹</p>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 女士专区 -</b><br>
+				<b style="font-size: 15px; color: #a8a7b0; padding: 10px 25px;line-height: 3;"> - 女士下装 -</b><br>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">卫裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">休闲裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">牛仔裤</p>
+				<p style="text-align: center; margin-right: 25px; color: dimgray;font-size: 13px; margin-bottom: 10px;">短裤</p>
+			</div>
+			<div id="right">
+				<div id="rightTop">
+					<p>
+						所有分类 > 新品 > 新品上市 > 
+						<input type="text" />
+					</p>
+					<div class="rightBottom">
+						<img src="image/rightBottom4.png" >
+					</div>
+					<div>
+						<img src="image/aaa.png" width="980px">
+					</div>
+					
+					<div class="main">
+						<ul>
+							<li>
+								<img src="image/p1_1.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>235</span>| 评价：<i>155</i></div>
+							</li>
+							<li>
+								<img src="image/p2_1.png" >
+								<p>BoyLondon 2019春季情侣短袖T恤B192NCT20301</p>
+								<div>总销量：<span>895</span>| 评价：<i>555</i></div>
+							</li>
+							<li>
+								<img src="image/p3_1.png" >
+								<p>boylondon旗舰官网春夏官方喷墨涂鸦老鹰印花情侣装短袖t恤T22501</p>
+								<div>总销量：<span>558</span>| 评价：<i>78</i></div>
+							</li>
+							<li>
+								<img src="image/p4_1.png" >
+								<p>BoyLondon 烫金老鹰短袖T恤男2019春季情侣款B191NC701202</p>
+								<div>总销量：<span>485</span>| 评价：<i>65</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p5_1.png" >
+								<p>boylondon旗舰官网春夏官方印花情侣装短袖t恤T225045561</p>
+								<div>总销量：<span>285</span>| 评价：<i>35</i></div>
+							</li>
+							<li>
+								<img src="image/p6_1.png" >
+								<p>BoyLondonT恤短袖男潮牌情侣款2020春季B191NC7011sdfgsgsdg02</p>
+								<div>总销量：<span>198</span>| 评价：<i>65</i></div>
+							</li>
+							<li>
+								<img src="image/p7_1.png" >
+								<p>BOY LONDON老鹰款 常青 印花短袖T恤男 2018秋季B170NC000102</p>
+								<div>总销量：<span>985</span>| 评价：<i>685</i></div>
+							</li>
+							<li>
+								<img src="image/p8_1.png" >
+								<p>BoyLondonT2019春季B191NC701102</p>
+								<div>总销量：<span>2898</span>| 评价：<i>546</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p9_1.png" >
+								<p>BoyLondon 炫酷烫金印花情侣款圆领短袖T恤B192NC400102</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p10_1.png" >
+								<p> BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>656</span>| 评价：<i>795</i></div>
+							</li>
+							<li>
+								<img src="image/p11_1.png" >
+								<p>boylondon旗舰官网春夏官方印花情侣装短袖t恤T225045561</p>
+								<div>总销量：<span>464</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p12_1.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>2525</span>| 评价：<i>66</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p13_1.png" >
+								<p>boylondon旗舰官网春夏官方印花情侣装短袖t恤T225045561</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p14_1.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p15_1.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>2448</span>| 评价：<i>45</i></div>
+							</li>
+							<li>
+								<img src="image/p16_1.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>5456/span>| 评价：<i>665</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p17_1.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p1.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p19.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款/p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p20.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>24854</span>| 评价：<i>789</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p21.png" >
+								<p>BoyLondonT2019春季B191NC701102</p>
+								<div>总销量：<span>255</span>| 评价：<i>55</i></div>
+							</li>
+							<li>
+								<img src="image/p22.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>21251</span>| 评价：<i>5665</i></div>
+							</li>
+							<li>
+								<img src="image/p23.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>545</span>| 评价：<i>98</i></div>
+							</li>
+							<li>
+								<img src="image/p24.png" >
+								<p>BoyLondonT2019春季B191NC701102456454646</p>
+								<div>总销量：<span>4155</span>| 评价：<i>5455</i></div>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="image/p25.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>2256</span>| 评价：<i>557</i></div>
+							</li>
+							<li>
+								<img src="image/p26.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>2555</span>| 评价：<i>8855</i></div>
+							</li>
+							<li>
+								<img src="image/p27.png" >
+								<p>BOY LONDON字母印花圆领2019春季新款短袖T恤情侣款</p>
+								<div>总销量：<span>25665</span>| 评价：<i>5785</i></div>
+							</li>
+							<li>
+								<img src="image/p28.png" >
+								<p>BoyLondonT恤短袖男潮牌 潮流烫金情侣款2019春季B191NC701102</p>
+								<div>总销量：<span>2555</span>| 评价：<i>5545</i></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+		<div id="footer" style="border-top: #7D7C83 solid 2px; padding-top: 20px;font-size: 15px;text-align: center;color: #96959d;">
+			<span style="display: block;font-size: 16px;">BOY服饰旗舰店，源自1976，英伦潮牌鼻祖！卫衣、外套、T恤、裤装、裙装、配饰、新品专区、热卖尖货、每周上新。BOY LONDON 2017春潮涌动，潮T齐聚！进店立领5元无门槛优惠券！</span>
+				<span style="display: block;font-size: 14px;">移动站 - Boy London官网商城</span>
+		</div>
+	</body>
+</html>
