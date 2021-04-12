@@ -1,0 +1,26 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			#box1{
+				width: 100%;
+				height: 210px;
+				background: #3cf;
+			}
+			p{
+				color:crimson;
+				font-size: 100px;
+				font-family: 楷体;
+				background: #3cf;
+				padding: 100px 0 0;
+			}
+			#box2{
+				font-size: 36px;
+				text-align: center;
+				padding: 10px;
+				background-color: #fcf;
+			}
+			a{
+				padding: 10px;
+				text-decoration: none;
+			}
