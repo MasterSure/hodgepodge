@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>表格</title>
+		<link rel="stylesheet" type="text/css" href="css.css">
+	</head>
+	<body>
+		<h1 style="text-align: center;font-size:35px;">问卷调查</h1>
+		<form action="n_submit" method="get">
+			<div id="can">
+				<p class="p1">个人信息</p>
+				<p>姓名：<input type="text" name=""></p>
+				<p>E-mail邮箱地址：<input type="text" name=""></p>
+				<p>
+					您来自于<select name="">
+						<option value="">江西省</option>
+						<option value="">湖南省</option>
+						<option value="">吉林省</option>
+						<option value="">湖北省</option>
+						<option value="">河南省</option>
+
+					</select>
+				</p>
+				
+				<p>
+					请上传您的个人简介（word文件）：<input type="file" name="" />
+				</p>
+				
+			</div>
+			<div id="box2">
+				<p class="p1">调查问题</p>
+				<p>
+					你是大几的学生？(单选)<br>
+					<input type="radio" name="sex">大一<br>
+					<input type="radio" name="sex">大二<br>
+					<input type="radio" name="sex">大三
+				</p>
+				<p>
+					你上课做的最多的是什么？(多选)<br>
+					<input type="checkbox" name="sex">听课<br>
+					<input type="checkbox" name="sex">做笔记<br>
+					<input type="checkbox" name="sex">睡觉<br>
+					<input type="checkbox" name="sex">玩手机<br>
+				</p>
+			</div>
+			
+			<div id="box3">
+				<p class="p1">建议</p>
+				<br>
+				<textarea name="" rows=""></textarea><br>
+			</div>
+			
+			<div id="box4">
+				<input type="submit" name="" value="提交" />
+				<input type="reset" name="" value="重新填写">
+			</div>
+				
+			
+
+
+		</form>
+
+	</body>
+</html>

@@ -1,0 +1,27 @@
+/*
+* @Author: name
+* @Date:   2020-10-19 14:16:58
+* @Last Modified by:   name
+* @Last Modified time: 2020-10-19 14:43:49
+*/
+#can,#box2,#box3 {
+	margin: 0 auto;
+	position: relative;
+	border: 1px solid gray;
+	width: 600px;
+	padding: 0 10px;
+	border-radius: 5px;
+	margin-top: 18px;
+}
+
+.p1 {
+	position: absolute;
+	top: -29px;
+	background: white;
+}
+
+#box4{
+	margin: 0 auto;
+	width: 600px;
+	margin-top: 5px;
+}
