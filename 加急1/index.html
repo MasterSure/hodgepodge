@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				margin-left: 5vw;
+				position: relative;
+			}
+			.btn1{
+				position: absolute;
+				bottom: -6vw;
+				left: 23vw;
+			}
+		</style>
+	</head>
+	<body>
+		<p>基本设置</p> 
+		<hr >
+		数据库名称：PDBQZ <br>
+		操作类型：数据同步 <br>
+		
+		<p>执行设置</p>
+		<hr >
+		上次执行时间：2015-01-14 05:00:00<br><br>
+		<button type="submit" value="立即执行">立即执行</button> <br>
+		
+		<p>执行频率设定</p>
+		<hr >
+		<input type="checkbox" />每月 
+		<input type="checkbox" />每周 
+		<input type="checkbox" checked=""/>每天 
+		<br>
+		请选择具体时间：
+		<select value="5">
+			<option value="1">1点</option>
+			<option value="2">2点</option>
+			<option value="3">3点</option>
+			<option value="4">4点</option>
+			<option value="5">5点</option>
+			<option value="6">6点</option>
+			<option value="7">7点</option>
+			<option value="8">8点</option>
+			<option value="9">9点</option>
+			<option value="10">10点</option>
+			<option value="11">11点</option>
+			<option value="12">12点</option>
+		</select>
+		<br><br><br>
+		
+		<p>计划设定说明</p>
+		<hr >
+		<hr >
+		您设定的计划为 5 点 执行ORACLE更新计划<br>
+		
+		<button class="btn1" type="submit">提交计划</button>
+		
+	</body>
+</html>
