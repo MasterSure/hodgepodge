@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			font-size: 13px;
+		}
+
+		/*游戏频道公共样式*/
+		.channel-warp {
+			background-color: #F2F6FC;
+			border: 1px solid #F2F6FC;
+		}
+
+		.channel {
+			width: 1230px;
+			margin: 50px auto;
+		}
+
+		.channel>div {
+			width: 400px;
+			float: left;
+		}
+
+		.channel>div:nth-child(2) {
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+
+		.clear:after {
+			clear: both;
+			display: block;
+			content: "";
+
+		}
+
+		.title {
+			height: 30px;
+		}
+
+		.title img {
+			width: 100px;
+			height: 22px;
+			position: relative;
+			transform: translateY(-50%);
+			top: 50%;
+			margin-left: 10px;
+		}
+
+		.title-img {
+			height: 220px;
+			overflow: hidden;
+		}
+
+		/*标题图片*/
+		.title-img>div:first-child {
+			height: 220px;
+			background-size: cover;
+			transition: transform 1s;
+		}
+
+		/*透明层*/
+		.title-img>div:last-child {
+			height: 60px;
+			background-color: rgba(0, 0, 0, 0.5);
+			transition: transform .5s;
+			text-align: center;
+			color: white;
+			font-size: 16px;
+			line-height: 60px;
+		}
+
+		/*新闻*/
+		.news {
+			background-color: white;
+			border: 1px solid white;
+		}
+
+		.news>div {
+			width: 370px;
+			margin: auto;
+			margin-bottom: 15px;
+		}
+
+		.news>div:first-child {
+			margin-top: 30px;
+		}
+
+		.news>div:after {
+			clear: both;
+			display: block;
+			content: "";
+		}
+
+		.news>div>div {
+			float: left;
+		}
+
+		/*新闻图片*/
+		.news>div>div:first-child {
+			width: 100px;
+			height: 57px;
+			background-image: url(image/20201119095526-6885-14208.png);
+		}
+
+		/*新闻内容*/
+		.news-warp {
+			width: 260px;
+			height: 57px;
+			margin-left: 10px;
+			cursor: pointer;
+		}
+
+		/*新闻标题*/
+		.news-warp>div:first-child {
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		/*新闻副标题*/
+		.news-warp>div:nth-child(2) {
+			color: #ACADAF;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+
+
+
+
+
+		/*标题图片缩放*/
+		.title-img:hover>div:first-child {
+			transform: scale(1.2);
+		}
+
+		/*透明层滑入*/
+		.title-img:hover>div:last-child {
+			transform: translateY(-60px);
+		}
+
+		/*频道滑入*/
+		.channel>div:hover {
+			/*transition: box-shadow .5s;*/
+			box-shadow: 0px 0px 8px #A4D0F8;
+		}
+
+		/*新闻主标题滑入*/
+		.news-warp>div:first-child:hover {
+			color: #3F8DF6
+		}
+
+
+
+
+
+
+		/*ps4*/
+		.ps .title {
+			background-color: #2A64BC;
+		}
+
+		.ps .title img {
+			width: 87px;
+			height: 18px;
+		}
+
+		.ps .title-img>div:first-child {
+			background-image: url(image/20201120153146-1679-17031.png);
+		}
+
+
+
+		/*ns*/
+		.ns .title:first-child {
+			background-color: #BC2721;
+		}
+
+		.ns .title img {
+			width: 74px;
+		}
+
+		.ns .title-img>div:first-child {
+			background-image: url(image/20201120141512-9620-21260.jpg);
+		}
+
+
+
+		/*xbox*/
+		.xbox .title {
+			background-color: #41882F;
+		}
+
+		.xbox .title img {
+			width: 122px;
+		}
+
+		.xbox .title-img>div:first-child {
+			background-image: url(image/20201118090153-6930-64758.jpg);
+		}
+
+
+		.aaa {
+			border: 1px;
+			width: 150px;
+			height: 30px;
+			background: white;
+			/* 行内元素基础上,允许设置宽高 */
+			display: inline-block;
+			border-radius: 20px;
+			position: relative;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			margin-top: 30px;
+			margin-left: 20px;
+		}
+
+		.aaa:hover {}
+
+		.bbb {
+			border: 1px;
+			width: 150px;
+			height: 30px;
+			background: white;
+			/* 行内元素基础上,允许设置宽高 */
+			display: inline-block;
+			border-radius: 20px;
+			position: relative;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			margin-top: 30px;
+			margin-left: 40px;
+		}
+
+		.bbb:hover {}
+
+		.ccc {
+			border: 1px;
+			width: 150px;
+			height: 30px;
+			background: white;
+			/* 行内元素基础上,允许设置宽高 */
+			display: inline-block;
+			border-radius: 20px;
+			position: relative;
+			float: left;
+			text-align: center;
+			line-height: 30px;
+			margin-top: 30px;
+			margin-left: 60px;
+		}
+
+		.bbb:hover {}
+
+		.boxe {
+			width: 1100px;
+			margin: 50px auto;
+			margin-top: 100px;
+		}
+
+		.boxe img {
+			margin: 10px;
+		}
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="sty.css" />
+
+	<body>
+		<!-- 游戏频道 -->
+		<div class="channel-warp">
+
+			<!-- 游戏频道内容开始 -->
+			<div class="channel clear">
+				<!-- ps频道开始 -->
+				<div class="ps">
+					<!-- 导航 -->
+					<nav>
+						<!-- 标题 -->
+						<div class="title">
+							<img src="image/ps5.png">
+						</div>
+						<!-- 标题图片 -->
+						<div class="title-img">
+							<!-- 图片 -->
+							<div></div>
+							<!-- 透明层 -->
+							<div>《碧蓝幻想Versus》发布贺图庆祝销量破45万</div>
+						</div>
+					</nav>
+					<!-- 新闻 -->
+					<div class="news">
+						<div>
+							<div><img src="image/20201120153146-1679-17031 -1.png"></div>
+							<div class="news-warp">
+								<div>《碧蓝幻想Versus》发布贺图庆祝销量破45万</div>
+								<div>《碧蓝幻想Versus》的全球销量突破45万，Cygames发布了一张贺图庆祝该消息。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201119170954-2214-89401.jpg"></div>
+							<div class="news-warp">
+								<div>《魔法气泡™ 特趣思™ 俄罗斯方块™ 2》 公布追加可挖掘要素的“冒险”模式</div>
+								<div></div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201119145327-3087-44739.jpg"></div>
+							<div class="news-warp">
+								<div>索尼次世代主机PS5今日正式在港台地区发售</div>
+								<div></div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201119142442-1438-54489.png"></div>
+							<div class="news-warp">
+								<div>玩家DIY自制PS5主机前面板 比官方配色好看多了</div>
+								<div>IGN曝光了一些由玩家自己DIY的PS5面板作品，有的玩家把PS5前面板喷上了一层汽车喷膜，还有的玩家把PS5变成了蜘蛛侠主题，还有的玩家DIY了一款全黑的手柄。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201119082601-4684-12936.jpg"></div>
+							<div class="news-warp">
+								<div>《块魂Encore》新宣传片恶搞《赛博朋克2077》</div>
+								<div>《块魂Encore》于近日公开了一段恶搞《赛博朋克2077》的特别宣传片。</div>
+								<div class="aaa">进入Ps4频道</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ps频道结束 -->
+				<!-- ns频道开始 -->
+				<div class="ns">
+					<!-- 导航 -->
+					<nav>
+						<!-- 标题 -->
+						<div class="title">
+							<img src="image/switch.png">
+						</div>
+						<!-- 标题图片 -->
+						<div class="title-img">
+							<!-- 图片 -->
+							<div></div>
+							<!-- 透明层 -->
+							<div>《方块地球防卫军》第二弹实机演示影像公布</div>
+						</div>
+						<!-- 新闻 -->
+						<div class="news">
+							<div>
+								<div><img src="image/20201122153141-6114-59711.png"></div>
+								<div class="news-warp">
+									<div>任天堂：不打算将《塞尔达无双》做成独立IP系列</div>
+									<div>“虽然塞尔达无双已经推出两款作品，但目前并没有计划要做成一个独立的系列。每一款衍生作品都需要根据其创造性做出决定，并且最重要的是这个想法会得到玩家们的认同。”</div>
+								</div>
+							</div>
+							<div>
+								<div><img src="image/20201120095644-6193-27328.png"></div>
+								<div class="news-warp">
+									<div>《健身环大冒险》更新上线 加入小知识清单模块</div>
+									<div>《健身环大冒险》公开新影像，视频中为玩家们介绍了游戏的具体更新细节，此次免费内容更新已于2020年11月19日11:00正式上线。</div>
+								</div>
+							</div>
+							<div>
+								<div><img src="image/20201119104719-1709-65390.png"></div>
+								<div class="news-warp">
+									<div>《塞尔达无双 灾厄启示录》公布官方中字宣传片</div>
+									<div>《塞尔达无双 灾厄启示录》官方公布中文字幕宣传片，介绍了林克、塞尔达与四英杰众人集结应对灾厄的背景故事。</div>
+								</div>
+							</div>
+							<div>
+								<div><img src="image/20201119095526-6885-14208.png"></div>
+								<div class="news-warp">
+									<div>《健身拳击2》体验版已上架Nintendo Switch</div>
+									<div>近日，日本游戏厂商Imagineer开发的新作《有氧拳击2》试玩版已于11月18日上架Nintendo Switch。</div>
+								</div>
+							</div>
+							<div>
+								<div><img src="image/20201118103812-5497-17379.jpg"></div>
+								<div class="news-warp">
+									<div>《三国志14 威力加强版》NS版PV公布独占剧本</div>
+									<div>PV详细地介绍了本作相比于原版添加的额外内容，Switch版将独占预购特典剧本《夷陵之战》。</div>
+									<div class="bbb">进入Swith频道</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+				<!-- ns频道结束 -->
+				<!-- xbox频道开始 -->
+				<div class="xbox">
+					<!-- 导航 -->
+					<nav>
+						<!-- 标题 -->
+						<div class="title">
+							<img src="image/xboxseriesx.png">
+						</div>
+						<!-- 标题图片 -->
+						<div class="title-img">
+							<!-- 图片 -->
+							<div></div>
+							<!-- 透明层 -->
+							<div>《赛博朋克2077》次世代与本世代版实机演示公开</div>
+						</div>
+					</nav>
+					<!-- 新闻 -->
+					<div class="news">
+						<div>
+							<div><img src="image/20201121114023-9109-32354.jpg"></div>
+							<div class="news-warp">
+								<div>《时代》周刊承认XSS为2020百大最佳发明之一</div>
+								<div>美国《时代》周刊将Xbox Series S主机特别承认为“2020年100大最佳发明之一”。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201117152109-4350-84859.jpg"></div>
+							<div class="news-warp">
+								<div>《光环 无限》不会在TGA展出 新情报将于近期公开</div>
+								<div>Jarrard表示虽然他们会在接下来的几周公布游戏相关的新内容，但是TGA上确实不会公布像上次一样正式的预告片了。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201117090831-5030-74585.png"></div>
+							<div class="news-warp">
+								<div>微软预计至明年4月XBOX Series X/S仍将供应不足</div>
+								<div>近日，微软首席财务官Tim Stuart表示称，预计至2021年第一季度为止，XBOX Series X/S的供货量仍然无法得到满足。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201115180350-1781-62625.png"></div>
+							<div class="news-warp">
+								<div>《使命召唤16 现代战争》XSX版本更新 支持120fps</div>
+								<div>《使命召唤16》增添了120fps选项，但仅限Xbox Series X版，PS5版并没有这个选项。</div>
+							</div>
+						</div>
+						<div>
+							<div><img src="image/20201115143219-2827-73511.png"></div>
+							<div class="news-warp">
+								<div>微软：XSS在推动次世代发展 促进主机的升级换代</div>
+								<div>Xbox技术高管Andrew Goosen在接受外媒Eurogamer采访时表示：XSS在推动次世代的发展，相比于继续沿用X1X作为低端机型，开发XSS更有利于主机的市场和研发。</div>
+								<div class="ccc">进入Xbox频道</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- xbox频道结束 -->
+			</div>
+			<!-- 游戏频道内容结束 -->
+			<!-- 游戏频道入口开始 -->
+			<div class="boxe">
+				<img src="image/1.png">
+				<img src="image/2.png">
+				<img src="image/3.png">
+				<img src="image/4.png">
+				<img src="image/5.png">
+				<img src="image/6.png">
+
+			</div>
+
+			<div id="box0">
+				<div id="box1">
+					<div id="box1_1">
+						<span class="sp">巴士游库</span>
+						<span class="sp1">欧美推荐</span>
+						<span class="sp1">日系精选</span>
+						<span class="sp1">国产游戏</span>
+					</div>
+					<div id="box1_2">
+						<div id="left1">
+							<div id="box00">
+								<img src="image/10.png" width="389.33px">
+								<div id="boxa">
+									<p style="font-size: 24px;">赛博朋克2077</p>
+									<p style="font-size: 14px; color: gray;">Cyberpunk 2077</p>
+									<p style="font-size: 14px; color: #4985f2; border:  .5px solid #4985f2;margin:10px 140px; border-radius: 16px;">角色扮演游戏</p>
+								</div>
+							</div>
+						</div>
+						<div id="right1">
+							<div id="box11">
+								<img class="pic" src="image/11.jpg">
+								<p>星球大战 战机中队</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/12.png">
+								<p>古惑狼4 时机已到</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/13.png">
+								<p>博德之门3</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/14.jpg">
+								<p>幽灵行者</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/15.png">
+								<p>看门狗：军团</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/16.JPEG">
+								<p>帝国时代3：终极版</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/17.JPEG">
+								<p>Serious Sam 4:Planet</p>
+							</div>
+							<div id="box11">
+								<img class="pic" src="image/18.png">
+								<p>天外世界</p>
+							</div>
+						</div>
+					</div>
+					<div id="box1_3">
+						<img src="image/19.jpeg" >
+					</div>
+				</div>
+			</div>
+			<!-- 游戏频道入口结束 -->
+		</div>
+	</body>
+</html>
