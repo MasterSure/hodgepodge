@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;
+		user-select: none;}
+		#name{
+			width: 600px;
+			height: 400px;
+			background:skyblue;
+			margin:100px auto;
+			border-radius:30px;
+			text-align:center;
+			line-height:300px;
+			font-size:100px;
+			font-weight:bold;
+			color:#fff;
+		}
+		#box{
+			width:370px;
+			margin: 0 auto;
+		}
+		#btn{
+			width: 180px;height: 80px;
+			background:lightgreen;
+			margin:0 auto;
+			border-radius:20px;
+			text-align:center;
+			line-height:80px;
+			font-size:32px;
+			cursor:pointer;
+			display: inline-block;
+		}
+		#btn2{
+			width: 180px;height: 80px;
+			background:lightpink;
+			margin:0 auto;
+			border-radius:20px;
+			text-align:center;
+			line-height:80px;
+			font-size:32px;
+			cursor:pointer;
+			display: inline-block;
+		}
+		p{
+			font-size: 45px;
+			line-height: 200px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<p>幸运大抽奖</p>
+	<div id="box">
+		<div id="btn">点一个</div>
+		<div id="btn2">重新来过</div>
+	</div>
+	<div id="name"></div>
+	<script>
+		//学生名单
+		var students = ["张三","李四","赵四","王五","李逵","王小二","小李广","及时雨"];
+		//点击btn 可以在name的div随机显示某个学生
+		//再点击btn 结束定时任务
+		var btn = document.getElementById("btn");
+		var btn2 = document.getElementById("btn2");
+		var kg = true;//表示定时任务的开始或结束 true开始定时任务
+		var id;//定时器的id值，用于结束定时任务
+		var index;//随机下标
+		
+		btn.onclick = function(){
+			//判断学生名单中的人数，没有人则不执行以下任何代码
+			if(students.length == 0){
+				alert("全部点完了！");
+				return;
+			}
+			if(kg){//开始定时任务
+				id = setInterval(function(){
+					//从students数组中获取随机的下标 [0,arr.length)
+					index = parseInt(Math.random()*students.length);
+					var name = document.getElementById("name");
+					name.innerText = students[index];
+				},60);
+				kg = false;//并关上，下一次点击做的就是结束任务
+			}else{//结束定时任务
+				clearInterval(id);
+				kg = true;//并打开，下一次点击做的是开始任务
+				//把最后显示的元素 从数组中删除
+				//splice(index,num)删除指定数组中index下标的元素，num:删除的数量
+				students.splice(index,1);
+				console.log(students);
+			}
+		};
+		
+		btn2.onclick = function(){
+			location.reload([true]);
+		};
+	</script>
+</body>
+</html>

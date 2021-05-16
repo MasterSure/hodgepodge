@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin: 0;padding: 0;}
+		ul li{
+			width:40px;height: 40px;
+			background:url("images/xing.png") 0px -40px;
+			float: left;
+			list-style:none;
+		}
+		#box{
+			color: gray;
+			width: 500px;
+			height: 700px;
+			/* background: skyblue; */
+			margin: 0 auto;
+			border: 2px solid dimgray;
+		}
+		#box #top{
+			width: 100%;
+			height: 260px;
+		}
+		#right{
+			float: right;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 110px;
+			margin-right: 80px;
+		}
+		#left{
+			float: left;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 80px;
+			margin-left: 77px;
+		}
+		img{
+			width: 110px;
+			height: 110px;
+		}
+		#main{
+			margin: 0 auto;
+			width: 70%;
+			height: 300px;
+			text-align: center;
+			position: relative;
+		}
+		#main #list1{
+			text-align: center;
+			margin: 6px 15px;
+			width: 140px;
+			height: auto;
+			display: inline-block;
+			border: 1px solid gray;
+		}
+		#footer{
+			margin: 0 auto;
+			width: 70%;
+			height: 130px;
+			background: peachpuff;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="top">
+			<div id="left">
+				<img src="images/1.png" >
+			</div>
+			
+			<div id="right">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<p>点这里，为他评分</p>
+			</div>
+		</div>
+		
+		
+		<div id="main">
+			<br>
+			<hr >
+			<p style="width: 120px;background: white;
+				height: auto; margin: 0 auto;
+				position: absolute;
+				top: 10px;
+				left: 113px;
+				 ">对他的印象</p>
+			<br>
+			<div id="list1">
+				学习认真
+			</div>
+			<div id="list1">
+				帅气
+			</div>
+			<div id="list1">
+				温柔
+			</div>
+			<div id="list1">
+				善良
+			</div>
+		</div>
+		
+		<div id="footer">
+			<input type="data" name="" id="" value="" />
+		</div>
+	</div>
+	
+</body>
+
+
+
+	<script>
+		onload = function(){
+			//获取所有的li
+			var list = document.getElementsByTagName("li");
+			//1.经过所有的li标签时，点亮自己以及前面的兄弟
+			//2.不点击后离开所有的li标签时，所有li都熄灭
+			//3.点击后离开时，点亮自己以及前面的兄弟
+			for(var i =0;i<list.length;i++){
+				list[i].index = i;//循环的时候保存li标签对应的索引值
+				list[i].onmouseover = function(){
+					for(var j=0;j<=this.index;j++){
+						list[j].style.backgroundPosition = "0px 0px";
+					}
+				};
+				list[i].onmouseout = function(){
+					for(var k=0;k<list.length;k++){
+						list[k].style.backgroundPosition = "0px -40px";
+					}
+					//判断有没有current，有的话让current和前面的兄弟点亮
+					var current = document.getElementById("current");
+					if(current == null){return;}
+					var cur_index = current.index;
+					for(var p=0;p<=cur_index;p++){
+						list[p].style.backgroundPosition ="0px 0px";
+					}
+				};
+				list[i].onclick = function(){
+					//给所点击的li标签,添加一个标识
+					//在离开时 可以根据有没有这个标识来判断 前一次操作是点击
+					for(var m=0;m<list.length;m++){
+						list[m].id = "";
+					}
+					this.id = "current";
+				};
+			}
+		};
+	</script>
+</html>
