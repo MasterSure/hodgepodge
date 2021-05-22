@@ -1,0 +1,128 @@
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+	text-align: center;
+}
+
+.header {
+	display: inline-block;
+	position: relative;
+	background-color: #4CAF50;
+}
+
+.header:hover .downbtn {
+	display: block;
+	background-color: #f1f1f1;
+}
+
+.header:hover {
+	background-color: #3e8e41;
+}
+
+.header span {
+	padding: 30px;
+	line-height: 41px;
+	cursor: pointer;
+	color: white;
+}
+
+.header .downbtn {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	min-width: 100px;
+}
+
+.header .downbtn li {
+	line-height: 30px;
+	text-align: left;
+	padding-left: 5px;
+}
+
+.header .downbtn a:hover {
+	text-decoration: underline;
+	color: #f00;
+}
+
+.header .downbtn a {
+	display: block;
+	color: black;
+	width: 100%;
+}
+
+.div-a {
+	float: left;
+	width: 20%;
+}
+
+.div-b {
+	margin: 0 auto;
+	width: 60%
+}
+
+.div-x {
+	position: absolute;
+	top: 30px;
+	right: 5px;
+}
+
+span {
+	color: #878286;
+}
+
+
+#two ul {
+	text-align: center;
+	width: 960px;
+	height: 42px;
+	margin: 0 auto;
+	list-style: none;
+	border: 1px solid #dfdfdf;
+	background-color: white;
+}
+
+#two li {
+	display: inline;
+	list-style: none;
+}
+
+#two li a {
+	display: inline;
+	position: relative;
+	top: 10px;
+	padding: 5px 10px;
+	background-color: gold;
+	border: 5px solid white;
+	color: black;
+	font: 12px '΢���ź�';
+	text-decoration: none;
+}
+
+#two li a:hover {
+	background: orange;
+	opacity: 0.5;
+}
+
+body{
+	background: url(../image/bg.jpg) repeat fixed center;
+}
+table span{
+	color: aliceblue;
+}
+#two ul{
+	background-color:aliceblue 
+}
+#two ul li a{
+	background-color: plum;
+}
+#two{
+	margin-bottom: 100px;
+}
+</style>

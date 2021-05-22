@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>html</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				text-decoration: none;
+				list-style: none;
+			}
+
+			body {
+				text-align: center;
+			}
+
+			.header {
+				display: inline-block;
+				position: relative;
+				background-color: #4CAF50;
+			}
+
+			.header:hover .downbtn {
+				display: block;
+				background-color: #f1f1f1;
+			}
+
+			.header:hover {
+				background-color: #3e8e41;
+			}
+
+			.header span {
+				padding: 30px;
+				line-height: 41px;
+				cursor: pointer;
+				color: white;
+			}
+
+			.header .downbtn {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+				min-width: 100px;
+			}
+
+			.header .downbtn li {
+				line-height: 30px;
+				text-align: left;
+				padding-left: 5px;
+			}
+
+			.header .downbtn a:hover {
+				text-decoration: underline;
+				color: #f00;
+			}
+
+			.header .downbtn a {
+				display: block;
+				color: black;
+				width: 100%;
+			}
+
+			.div-a {
+				float: left;
+				width: 20%;
+			}
+
+			.div-b {
+				margin: 0 auto;
+				width: 60%
+			}
+
+			.div-x {
+				position: absolute;
+				top: 30px;
+				right: 5px;
+			}
+
+			span {
+				color: #878286;
+			}
+		</style>
+		<link href="./css/page.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div align='left'> <img src="./image/logo.jpg" width="100" height="75" /></div>
+		<hr />
+
+		<div class="div-x">
+			<form action="search.php" method="post">
+				<input type="text" style='border:2px solid #360 ;height:25px;font-size:20px' placeholder="请输入搜索商品..." name="product" />
+				<input type="submit" style="background:#4CAF50;width:100px;height:32px;color:white;font-size:16px;" name="action"
+				 value="搜索">
+			</form>
+		</div>
+
+		<div class="header">
+			<span>新闻</span>
+			<div class="downbtn">
+				<ul>
+					<li><a href="#">国内</a></li>
+					<li><a href="#">国外</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<span>商品</span>
+			<div class="downbtn">
+				<ul>
+					<li><a href="#">衣服</a></li>
+					<li><a href="#">帽子</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<span>作业</span>
+			<div class="downbtn">
+				<ul>
+					<li><a href="#">空置</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header">
+			<span>其他</span>
+			<div class="downbtn">
+				<ul>
+					<li><a href="#">空置</a></li>
+				</ul>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+		<div class="div-a">
+			<table width="180" align="center" border="1" cellspacing="0" style="font-size:20px;font-weight=lighter">
+				<tr>
+					<th align="right" bgcolor="#CCCCCC" scope="row"><i>News</i>&nbsp;&nbsp;&nbsp; <a href='hy/10/repair.html'>更多</a></th>
+				</tr>
+				<tr>
+					<td background="image/123.jpg" scope="row">
+						<marquee direction='up' scrollamount="2" loop="infinite">
+							<a href="#">News1<br>
+								<a href="#">News2<br>
+									<a href="#">News3<br>
+										<a href="#">News4<br>
+											<a href="#">News5<br>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="div-b">
+			<table width="100%" style="table-layout:fixed;word-break:break-all; word-wrap:break-all;">
+				<tr>
+					<th height="30" style="color:red;" colspan="3">最新商品</th>
+				</tr>
+				<tr>
+					<td width="50%" height="150" style="color:white;"><img src="./image/01.jpg" width="135" height="180" />&nbsp;</td>
+					<td width="50%" style="color:white;"><img src="./image/02.jpg" width="135" height="180" />&nbsp;</td>
+					<td width="50%" style="color:white;"><img src="./image/03.jpg" width="135" height="180" />&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="62" colspan="-2">星光大赏赵丽颖明星同款高<br>腰气质晚礼服显瘦宴会年会<br>艺考连衣裙女<br><span>$300</span></td>
+					<td>章若楠同款假两件格子连衣<br>裙女2020早秋新款法式<br>收腰气质a字裙<br><span>$300</span></td>
+					<td>若溯玫瑰印花长袖连衣裙女<br>2020秋冬新款法式复古<br>碎花中长款裙子<br><span>$300</span></td>
+				</tr>
+				<tr>
+					<td height="150" style="color:white;"><img src="./image/04.jpg" width="135" height="180" />&nbsp;</td>
+					<td style="color:white;"><img src="./image/05.jpg" width="135" height="180" />&nbsp;</td>
+					<td style="color:white;"><img src="./image/06.jpg" width="135" height="180" />&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="62" colspan="-2">灯芯绒连衣裙2020年新<br>款复古配大衣的冬裙v领小<br>心机法式奶凶裙子<br><span>$300</span></td>
+					<td>2020新款法式过膝复古<br>连衣裙女收腰显瘦气质裙子<br>秋冬季配大衣长裙<br><span>$300</span></td>
+					<td>法式复古设计感小众茶歇长<br>裙子女秋冬季2020年新<br>款气质修身连衣裙<br><span>$300</span></td>
+				</tr>
+				<tr>
+					<th height="30" style="color:red;" colspan="3">人气经典</th>
+				</tr>
+				<tr>
+					<td width="50%" height="150" style="color:white;"><img src="./image/01.jpg" width="135" height="180" />&nbsp;</td>
+					<td width="50%" style="color:white;"><img src="./image/02.jpg" width="135" height="180" />&nbsp;</td>
+					<td width="50%" style="color:white;"><img src="./image/03.jpg" width="135" height="180" />&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="62" colspan="-2">星光大赏赵丽颖明星同款高<br>腰气质晚礼服显瘦宴会年会<br>艺考连衣裙女<br><span>$300</span></td>
+					<td>章若楠同款假两件格子连衣<br>裙女2020早秋新款法式<br>收腰气质a字裙<br><span>$300</span></td>
+					<td>若溯玫瑰印花长袖连衣裙女<br>2020秋冬新款法式复古<br>碎花中长款裙子<br><span>$300</span></td>
+				</tr>
+				<tr>
+					<td height="150" style="color:white;"><img src="./image/04.jpg" width="135" height="180" />&nbsp;</td>
+					<td style="color:white;"><img src="./image/05.jpg" width="135" height="180" />&nbsp;</td>
+					<td style="color:white;"><img src="./image/06.jpg" width="135" height="180" />&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="62" colspan="-2">灯芯绒连衣裙2020年新<br>款复古配大衣的冬裙v领小<br>心机法式奶凶裙子<br><span>$300</span></td>
+					<td>2020新款法式过膝复古<br>连衣裙女收腰显瘦气质裙子<br>秋冬季配大衣长裙<br><span>$300</span></td>
+					<td>法式复古设计感小众茶歇长<br>裙子女秋冬季2020年新<br>款气质修身连衣裙<br><span>$300</span></td>
+				</tr>
+			</table>
+		</div>
+		<p>&nbsp;</p>
+		<!--修改页数-->
+		<div id="two">
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">9</a></li>
+				<li><a href="#">10</a></li>
+				<li><a href="#">下一页</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
+</html>
