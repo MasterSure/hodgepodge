@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+		<div id="box">
+			
+			<div id="d1">
+				<p>第一段</p>
+				<a href="obj2.html"><img src="img/4.jpg" ></a>
+			</div>
+			<div id="d2">
+				<p>第二段</p>
+			</div>
+			<div id="d3">
+				<p>第三段</p>
+				<a href="obj2.html#d1">跳到锚点2页面的d1处</a>
+			</div>
+			
+			<div class="fix">
+				<a href="课程表/index.html">课表</a>
+				<a href="wangye/indexzy-1.html">答疑</a>
+			</div>
+			
+			
+			<div class="fix2">
+				<div onclick="javascript:document.getElementById('d1').scrollIntoView()">点击跳到第一段</div>
+				<div onclick="javascript:document.getElementById('d2').scrollIntoView()">点击跳到第二段</div>
+				<div onclick="javascript:document.getElementById('d3').scrollIntoView()">点击跳到第三段</div>
+			</div>
+				
+		</div>
+
+		<div id="box1">
+
+					<p></p>
+
+					<img src="img/6.jpg" border="0" usemap="#planetmap" alt="Planets" />
+
+					<map name="planetmap" id="planetmap">
+
+						<area shape="circle" coords="0,0,110,260" href="obj2.html" target="_blank" alt="Venus" />
+
+						<area shape="circle" coords="0,0,110,260" href="obj2.html" target="_blank" alt="Mercury" />
+
+						<area shape="rect" coords="0,0,110,260" href="obj2.html" target="_blank" alt="Sun" />
+
+					</map>
+
+		</div>
+
+	</body>
+</html>
